@@ -215,6 +215,7 @@ header {
 
 .logo-text {
   font-family: var(--font-heading);
+  margin-left:35px;
   font-weight: 800;
   font-size: 2rem;
   color: var(--color-text-dark);
@@ -654,4 +655,5 @@ footer {
   .process-step {
     margin-bottom: 1.5rem;
   }
+
 }
