@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Aether Digital - Website Packages</title>
+    <meta name="description"
+        content="Transparent pricing for web design, SEO, and marketing automation. Starter €999 | Growth €1,999 | Premium €2,999">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additions.css">
+    <link rel="stylesheet" href="css/enhanced-sections.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo"><span class="logo-text">Aether<span class="logo-dot"></span></span></a>
+            <div class="hamburger">☰</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Portfolio</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                    <li><a href="contact.html" class="btn" style="padding: 0.5rem 1.2rem; margin-left: 0.5rem;">Start
+                            Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 6rem 0;">
+            <div class="container">
+                <h1>Transparent Pricing</h1>
+                <p>Choose the package that fits your business goals.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Starter Package -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">999</span>
+                            </div>
+                            <p class="billing">One-time payment</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✓ 5-Page Professional Website</li>
+                            <li>✓ Mobile Responsive Design</li>
+                            <li>✓ Contact Form Integration</li>
+                            <li>✓ SEO Basic Setup</li>
+                            <li>✓ Google Analytics</li>
+                            <li>✓ 1 Month Support</li>
+                            <li class="disabled">✗ CMS Access</li>
+                            <li class="disabled">✗ E-commerce</li>
+                        </ul>
+                        <a href="contact.html?plan=starter" class="btn btn-outline"
+                            style="width: 100%; text-align: center;">Get Started</a>
+                    </div>
+
+                    <!-- Growth Package (Popular) -->
+                    <div class="pricing-card popular">
+                        <div class="badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Growth</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">1,999</span>
+                            </div>
+                            <p class="billing">One-time payment</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✓ 10-Page Custom Website</li>
+                            <li>✓ Advanced Responsive Design</li>
+                            <li>✓ WordPress CMS</li>
+                            <li>✓ SEO Optimization (3 months)</li>
+                            <li>✓ Analytics + Heatmaps</li>
+                            <li>✓ Email Marketing Setup</li>
+                            <li>✓ 3 Months Support</li>
+                            <li>✓ Basic Automation (1 flow)</li>
+                        </ul>
+                        <a href="contact.html?plan=growth" class="btn" style="width: 100%; text-align: center;">Get
+                            Started</a>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">2,999</span>
+                            </div>
+                            <p class="billing">One-time payment</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✓ Unlimited Pages</li>
+                            <li>✓ Custom Web Application</li>
+                            <li>✓ Headless CMS / E-commerce</li>
+                            <li>✓ SEO + Content Strategy (6 months)</li>
+                            <li>✓ Advanced Analytics Suite</li>
+                            <li>✓ Marketing Automation (5 flows)</li>
+                            <li>✓ 6 Months Priority Support</li>
+                            <li>✓ Monthly Performance Reports</li>
+                        </ul>
+                        <a href="contact.html?plan=premium" class="btn btn-outline"
+                            style="width: 100%; text-align: center;">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Calculator -->
+                <div style="margin-top: 6rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    <h2 class="section-title">Calculate Your Project</h2>
+                    <p class="section-subtitle">Get an estimated quote based on your needs</p>
+
+                    <div class="calculator-card">
+                        <div class="form-group">
+                            <label class="form-label">Project Scale: <span id="pagesValue"
+                                    style="color: var(--color-accent); font-weight: 700;">10 pages</span></label>
+                            <div class="range-wrapper">
+                                <input type="range" id="pages" min="5" max="30" value="10" step="5"
+                                    class="premium-range">
+                                <div class="range-labels">
+                                    <span>5</span>
+                                    <span>30+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Additional Features</label>
+                            <div class="checkbox-grid">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="cms" value="300">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">CMS Integration <span class="price-tag">+€300</span></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="ecommerce" value="800">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">E-commerce <span class="price-tag">+€800</span></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="seo" value="500">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">SEO Pro Package <span class="price-tag">+€500</span></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="automation" value="600">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Marketing Automation <span
+                                            class="price-tag">+€600</span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="calculator-result">
+                            <h3>Estimated Price</h3>
+                            <div class="estimated-price">€<span id="totalPrice">1000</span></div>
+                            <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem;">Final quote
+                                determined after consultation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div style="margin-top: 6rem;">
+                    <h2 class="section-title">Pricing FAQs</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>What's included in the monthly support?</h4>
+                            <p>Technical support, security updates, bug fixes, and minor content changes.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Can I upgrade my package later?</h4>
+                            <p>Absolutely! You can upgrade anytime and we'll credit your initial investment.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you offer payment plans?</h4>
+                            <p>Yes, we offer 3-month and 6-month payment plans for Growth and Premium packages.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What if I need something custom?</h4>
+                            <p>We love custom projects! Contact us for a personalized quote.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Comparison Table -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Detailed Comparison</h2>
+                <div class="comparison-table">
+                    <div class="comparison-row">
+                        <div>Feature</div>
+                        <div>Basic</div>
+                        <div>Growth</div>
+                        <div>Enterprise</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>Pages</div>
+                        <div>Up to 5</div>
+                        <div>Up to 15</div>
+                        <div>Unlimited</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>CMS Integration</div>
+                        <div>Standard</div>
+                        <div>Advanced</div>
+                        <div>Custom</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>SEO Setup</div>
+                        <div>Basic</div>
+                        <div>Comprehensive</div>
+                        <div>Ongoing</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>Support</div>
+                        <div>Email</div>
+                        <div>Priority</div>
+                        <div>24/7 Dedicated</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Money Back Guarantee -->
+        <section class="section-padding" style="background: var(--color-card-bg);">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-box" style="grid-column: span 3; text-align: center;">
+                        <span style="font-size: 3rem;">🛡️</span>
+                        <h3>30-Day Money-Back Guarantee</h3>
+                        <p>We are confident in our quality. If you're not satisfied with the initial designs, we'll
+                            refund your deposit. No questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: CTA -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Not Sure Which Plan?</h2>
+                    <p>Let's discuss your specific needs and create a custom package.</p>
+                    <a href="contact.html" class="btn-white">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;"><span class="logo-text">Aether<span class="logo-dot"></span></span></a>
+                    <p>Engineering the future of digital business.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="jobs.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal & Contact</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li>hello@aetherdigital.com</li>
+                        <li>(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Aether Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/pricing-calculator.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aether Digital</title>
+    <meta name="description"
+        content="View our recent work: FinTech dashboards, E-commerce platforms, and Enterprise automation systems.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additions.css">
+    <link rel="stylesheet" href="css/enhanced-sections.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo"><span class="logo-text">Aether<span class="logo-dot"></span></span></a>
+            <div class="hamburger">☰</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="jobs.html">Careers</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                    <li><a href="contact.html" class="btn" style="padding: 0.5rem 1.2rem; margin-left: 0.5rem;">Start
+                            Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 6rem 0;">
+            <div class="container">
+                <h1>Selected Works</h1>
+                <p>Engineering excellence in action.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/portfolio-fintech.png" alt="FinTech Dashboard UI">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>Apex Capital Analytics</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">React / D3.js / Real-time
+                                WebSocket</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="ecommerce">
+                        <img src="images/portfolio-fashion.png" alt="Fashion E-commerce">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>Atelier Noir</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">Headless Shopify / Next.js /
+                                Framer Motion</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/portfolio-saas.png" alt="SaaS Application">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>FlowState Project Manager</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">Vue.js / Firebase / Tailwind
+                                CSS</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="automation">
+                        <img src="images/portfolio-cloud.png" alt="Cloud Infrastructure">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>Nebula Infrastructure</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">AWS CloudFormation / Python /
+                                Docker</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/portfolio-fitness.png" alt="Fitness App Mobile UI">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>Pulse Tracker App</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">React Native / HealthKit
+                                Integration</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="automation">
+                        <img src="images/portfolio-analytics.png" alt="Market Analytics Tool">
+                        <div style="padding: 1rem; background: #1e293b;">
+                            <h4>Global Market Insights</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light);">Python Streamlit / Pandas /
+                                SciPy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Featured Project Spotlight -->
+        <section class="section-padding" style="background: var(--color-card-bg);">
+            <div class="container">
+                <span class="badge">Featured Case Study</span>
+                <h2 class="section-title">FinTech Revolution App</h2>
+                <div class="feature-grid">
+                    <div class="feature-box" style="grid-column: span 2;">
+                        <span class="feature-icon">📱</span>
+                        <h4>The Challenge</h4>
+                        <p>Legacy banking systems were slowing down transactions. Our client needed a mobile-first,
+                            real-time payment solution.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="feature-icon">⚡</span>
+                        <h4>The Solution</h4>
+                        <p>Built a React Native app with Node.js backend, reducing transaction time by 90%.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="feature-icon">🚀</span>
+                        <h4>The Result</h4>
+                        <p>100k downloads in first month, 4.9 star rating on App Store.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Impact Stats -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Impact by Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Websites Launched</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1M+</h3>
+                        <p>Users Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>$50M</h3>
+                        <p>Client Revenue</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>15</h3>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Tech Stack -->
+        <section class="section-padding" style="background: var(--color-card-bg);">
+            <div class="container">
+                <h2 class="section-title">Technologies We Use</h2>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <h4>Frontend</h4>
+                        <p>React, Vue, WebGL, Tailwind</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Backend</h4>
+                        <p>Node, Python, Go, Rust</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Cloud</h4>
+                        <p>AWS, Azure, Google Cloud</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Mobile</h4>
+                        <p>React Native, Flutter, Swift</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Project Timeline -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">How We Deliver</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Sprint 1-2</h4>
+                            <p>Architecture & MVP Core</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Sprint 3-5</h4>
+                            <p>Feature Development & Testing</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Sprint 6</h4>
+                            <p>Polish, Security Audit & Launch</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: CTA -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Have a Project in Mind?</h2>
+                    <p>Let's turn your vision into a digital masterpiece.</p>
+                    <a href="contact.html" class="btn-white">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;"><span class="logo-text">Aether<span class="logo-dot"></span></span></a>
+                    <p>Engineering the future of digital business.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="jobs.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal & Contact</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li>hello@aetherdigital.com</li>
+                        <li>(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Aether Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+

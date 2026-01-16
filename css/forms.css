@@ -1,0 +1,265 @@
+/* Premium Form Styles - Improved Readability */
+
+.premium-form {
+    background: var(--color-card-bg);
+    /* Solid base */
+    background: linear-gradient(135deg, rgba(26, 31, 46, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+    /* High opacity gradient */
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.premium-form h3 {
+    margin-bottom: 2rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(96, 165, 250, 0.2);
+    border-radius: 8px;
+    color: var(--color-text-light);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Fix for Select Options Visibility */
+.form-group select option {
+    background-color: #1e293b;
+    /* Dark Slate fallback */
+    background-color: var(--color-bg);
+    /* Use variable if available */
+    color: var(--color-text-main);
+    padding: 10px;
+}
+
+[data-theme="light"] .form-group select option {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.form-file-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-file-upload input[type=file] {
+    position: absolute;
+    left: -9999px;
+}
+
+.file-upload-label {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: rgba(167, 139, 250, 0.08);
+    border: 2px dashed var(--color-accent-secondary);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-text-light);
+}
+
+.file-upload-label:hover {
+    background: rgba(167, 139, 250, 0.15);
+    border-color: var(--color-accent);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--color-accent);
+}
+
+.form-checkbox label {
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--color-text-light);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow), var(--shadow-lg);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.form-success {
+    background: rgba(52, 211, 153, 0.1);
+    border: 2px solid var(--color-success);
+    color: var(--color-success);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-error {
+    background: rgba(248, 113, 113, 0.1);
+    border: 2px solid var(--color-error);
+    color: var(--color-error);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-hint {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+/* Light Theme Form Adjustments */
+[data-theme="light"] .premium-form {
+    background: white;
+    border-color: rgba(96, 165, 250, 0.25);
+    box-shadow: var(--shadow-md);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea,
+[data-theme="light"] .form-group select {
+    background: #f9fafb;
+    border-color: #d1d5db;
+    color: #111827;
+}
+
+[data-theme="light"] .form-group input::placeholder,
+[data-theme="light"] .form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group textarea:focus,
+[data-theme="light"] .form-group select:focus {
+    background: white;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+[data-theme="light"] .form-group label {
+    color: #111827;
+}
+
+[data-theme="light"] .form-checkbox label {
+    color: #374151;
+}
+
+[data-theme="light"] .file-upload-label {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    color: #374151;
+}
+
+[data-theme="light"] .file-upload-label:hover {
+    background: #e5e7eb;
+    border-color: var(--color-accent);
+}
+
+/* Form Grid Layouts */
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .premium-form {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-grid-2,
+    .form-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
